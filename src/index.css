@@ -97,5 +97,30 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #fafaf8;
+    color: #111111;
+  }
+}
+
+.opacity-0-init {
+  opacity: 0;
+}
+
+.line-accent {
+  display: block;
+  height: 2px;
+  background: #cc2200;
+  transform-origin: left;
+  animation: line-grow 0.8s ease-out 0.2s forwards;
+  transform: scaleX(0);
+}
+
+@keyframes line-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
